@@ -17,6 +17,9 @@ struct Options {
     int ultrawide = 0;    // the camera at the monitor's shape when it is wider than 16:9; read once, at the start (host/hos_main.c)
     int show_fps = 0;
     int fullscreen = 0;   // borderless, at the monitor's size: F11 is the same setting
+    int invert_cam_x = 0; // right-stick camera horizontal inversion: 0 normal, 1 inverted
+    int invert_cam_y = 0; // right-stick camera vertical inversion: 0 normal, 1 inverted
+    int pad_layout = 0;   // 0 Nintendo (default), 1 Xbox / PC, 2 Swap Face Buttons, 3 Custom
 };
 extern Options opts;
 
