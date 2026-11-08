@@ -10,6 +10,7 @@ on:
       - nx2/unpack.py
       - nx2/test_nup_paths.py
       - tests/test_make_game_cache.py
+      - tests/test_lift_key.py
       - tests/test_child_unicode.py
       - gpu/vk/vk_replay.cpp
       - gpu/vk/vk_state.h
@@ -81,6 +82,7 @@ on:
       - nx2/unpack.py
       - nx2/test_nup_paths.py
       - tests/test_make_game_cache.py
+      - tests/test_lift_key.py
       - tests/test_child_unicode.py
       - gpu/vk/vk_replay.cpp
       - gpu/vk/vk_state.h
@@ -174,6 +176,8 @@ jobs:
         run: python -I -B nx2/test_nup_paths.py
       - name: Check source-cache coherency
         run: python -I -B tests/test_make_game_cache.py
+      - name: Check what makes a rebuild translate again
+        run: python -I -B tests/test_lift_key.py
       - name: Check isolated child Unicode output
         run: python -I -B tests/test_child_unicode.py
       - name: Check packaged CPM discovery
