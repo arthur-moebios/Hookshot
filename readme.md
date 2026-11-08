@@ -203,6 +203,9 @@ and changes, the bottom face button changes too, and the right one closes the me
 | Upscaling | Off, Catmull-Rom, Lanczos |
 | Sharpness | 0 to 100% |
 | Game speed | Per frame, Real time |
+| Invert camera X | Off, On |
+| Invert camera Y | Off, On |
+| Layout preset | Nintendo (Default), Xbox / PC, Swap Face Buttons, Custom |
 | Handheld profile | Off, On |
 | Ultrawide | 16:9, Monitor's shape |
 | FPS counter | Off, On |
